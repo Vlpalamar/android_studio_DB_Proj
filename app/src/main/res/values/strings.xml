@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="start_page_main_text">Coffee so good,\nyour taste buds\nwill love it.</string>
+    <string name="start_page_second_text">The best grain, the finest roast, the\n powerful flovour.</string>
+    <string name="get_start_button">Get Start</string>
+    <string name="img_was_uploaded">Картинка загруженна</string>
+    <string name="saved">сохранненно</string>
+    <string name="location">Location</string>
+    <string name="locationExample">Florida, Orlando</string>
+    <string name="search_coffee">Search coffee</string>
+    <string name="promo">Promo</string>
+    <string name="buy_one_get">Buy one get \none FREE</string>
+    <string name="cappucino">Cappucino</string>
+    <string name="machiato">Machiato</string>
+    <string name="latte">Latte</string>
+    <string name="todo">TODO</string>
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <ImageButton
+
+        android:id="@+id/ExampleСoffeePhoto"
+        android:maxHeight="127dp"
+        android:maxWidth="111dp"
+        android:layout_width="127dp"
+        android:layout_height="111dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/coffee_example" />
+
+    <TextView
+        android:id="@+id/ExampleСoffeeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:fontFamily="@font/dm_sans_bold"
+        android:text="@string/cappucino"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ExampleСoffeePhoto" />
+
+    <TextView
+        android:id="@+id/ExampleCoffeeDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:text="with Chocolate"
+        android:textSize="12sp"
+        android:fontFamily="@font/dm_sans"
+        android:textColor="@color/coffee_item_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ExampleСoffeeName" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="$"
+        android:fontFamily="@font/dm_sans_bold"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ExampleCoffeeDescription" />
+
+    <TextView
+        android:id="@+id/ExampleCoffeePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:text="4.53"
+        android:fontFamily="@font/dm_sans_bold"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/ExampleCoffeeDescription" />
+
+    <ImageButton
+        android:id="@+id/ExampleCoffeeAddToCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:onClick="addToCart"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/ExampleCoffeePrice"
+        app:layout_constraintStart_toEndOf="@+id/ExampleCoffeePrice"
+        app:layout_constraintTop_toTopOf="@+id/ExampleCoffeePrice"
+        app:srcCompat="@drawable/add_to_cart_button"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
